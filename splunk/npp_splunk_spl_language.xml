@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="Splunk SPL" ext="spl" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="yes" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="2" />
+            <Prefix Keywords1="yes" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00# 01 02# 03 04=</Keywords>
+            <Keywords name="Numbers, prefix1"></Keywords>
+            <Keywords name="Numbers, prefix2"></Keywords>
+            <Keywords name="Numbers, extras1"></Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1"></Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1"></Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open"></Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close"></Keywords>
+            <Keywords name="Folders in code2, open"></Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close"></Keywords>
+            <Keywords name="Folders in comment, open"></Keywords>
+            <Keywords name="Folders in comment, middle"></Keywords>
+            <Keywords name="Folders in comment, close"></Keywords>
+            <Keywords name="Keywords1">abstract&#x000D;&#x000A;accum&#x000D;&#x000A;addcoltotals&#x000D;&#x000A;addinfo&#x000D;&#x000A;addtotals&#x000D;&#x000A;analyzefields&#x000D;&#x000A;anomalies&#x000D;&#x000A;anomalousvalue&#x000D;&#x000A;anomalydetection&#x000D;&#x000A;append&#x000D;&#x000A;appendcols&#x000D;&#x000A;appendpipe&#x000D;&#x000A;arules&#x000D;&#x000A;associate&#x000D;&#x000A;audit&#x000D;&#x000A;autoregress&#x000D;&#x000A;bin&#x000D;&#x000A;bucket&#x000D;&#x000A;bucketdir&#x000D;&#x000A;chart&#x000D;&#x000A;cluster&#x000D;&#x000A;cofilter&#x000D;&#x000A;collect&#x000D;&#x000A;concurrency&#x000D;&#x000A;contingency&#x000D;&#x000A;convert&#x000D;&#x000A;correlate&#x000D;&#x000A;ctable&#x000D;&#x000A;datamodel&#x000D;&#x000A;dbinspect&#x000D;&#x000A;dedup&#x000D;&#x000A;delete&#x000D;&#x000A;delta&#x000D;&#x000A;diff&#x000D;&#x000A;erex&#x000D;&#x000A;eval&#x000D;&#x000A;eventcount&#x000D;&#x000A;eventstats&#x000D;&#x000A;extract&#x000D;&#x000A;fieldformat&#x000D;&#x000A;fields&#x000D;&#x000A;fieldsummary&#x000D;&#x000A;filldown&#x000D;&#x000A;fillnull&#x000D;&#x000A;findtypes&#x000D;&#x000A;folderize&#x000D;&#x000A;foreach&#x000D;&#x000A;format&#x000D;&#x000A;from&#x000D;&#x000A;gauge&#x000D;&#x000A;gentimes&#x000D;&#x000A;geom&#x000D;&#x000A;geomfilter&#x000D;&#x000A;geostats&#x000D;&#x000A;head&#x000D;&#x000A;highlight&#x000D;&#x000A;history&#x000D;&#x000A;iconify&#x000D;&#x000A;input&#x000D;&#x000A;inputcsv&#x000D;&#x000A;inputlookup&#x000D;&#x000A;iplocation&#x000D;&#x000A;join&#x000D;&#x000A;kmeans&#x000D;&#x000A;kvform&#x000D;&#x000A;loadjob&#x000D;&#x000A;localize&#x000D;&#x000A;localop&#x000D;&#x000A;lookup&#x000D;&#x000A;makecontinuous&#x000D;&#x000A;makemv&#x000D;&#x000A;makeresults&#x000D;&#x000A;map&#x000D;&#x000A;mcollect&#x000D;&#x000A;metadata&#x000D;&#x000A;metasearch&#x000D;&#x000A;meventcollect&#x000D;&#x000A;mstats&#x000D;&#x000A;multikv&#x000D;&#x000A;multisearch&#x000D;&#x000A;mvcombine&#x000D;&#x000A;mvexpand&#x000D;&#x000A;nomv&#x000D;&#x000A;outlier&#x000D;&#x000A;outputcsv&#x000D;&#x000A;outputlookup&#x000D;&#x000A;outputtext&#x000D;&#x000A;overlap&#x000D;&#x000A;pivot&#x000D;&#x000A;predict&#x000D;&#x000A;rangemap&#x000D;&#x000A;rare&#x000D;&#x000A;redistribute&#x000D;&#x000A;regex&#x000D;&#x000A;relevancy&#x000D;&#x000A;reltime&#x000D;&#x000A;rename&#x000D;&#x000A;replace&#x000D;&#x000A;rest&#x000D;&#x000A;return&#x000D;&#x000A;reverse&#x000D;&#x000A;rex&#x000D;&#x000A;rtorder&#x000D;&#x000A;run&#x000D;&#x000A;savedsearch&#x000D;&#x000A;script&#x000D;&#x000A;scrub&#x000D;&#x000A;search&#x000D;&#x000A;searchtxn&#x000D;&#x000A;selfjoin&#x000D;&#x000A;sendemail&#x000D;&#x000A;set&#x000D;&#x000A;setfields&#x000D;&#x000A;sichart&#x000D;&#x000A;sirare&#x000D;&#x000A;sistats&#x000D;&#x000A;sitimechart&#x000D;&#x000A;sitop&#x000D;&#x000A;sort&#x000D;&#x000A;spath&#x000D;&#x000A;stats&#x000D;&#x000A;strcat&#x000D;&#x000A;streamstats&#x000D;&#x000A;table&#x000D;&#x000A;tags&#x000D;&#x000A;tail&#x000D;&#x000A;timechart&#x000D;&#x000A;timewrap&#x000D;&#x000A;top&#x000D;&#x000A;transaction&#x000D;&#x000A;transpose&#x000D;&#x000A;trendline&#x000D;&#x000A;tscollect&#x000D;&#x000A;tstats&#x000D;&#x000A;typeahead&#x000D;&#x000A;typelearner&#x000D;&#x000A;typer&#x000D;&#x000A;union&#x000D;&#x000A;uniq&#x000D;&#x000A;untable&#x000D;&#x000A;where&#x000D;&#x000A;x11&#x000D;&#x000A;xmlkv&#x000D;&#x000A;xmlunescape&#x000D;&#x000A;xpath&#x000D;&#x000A;xyseries</Keywords>
+            <Keywords name="Keywords2">true false 0 1 disable enable blacklist whitelist rejectAlways auto main disabled enabled ALL !aNULL !eNULL !LOW !EXP RC4+RSA +HIGH +MEDIUM default oldest replicationQueue has_key typingQueue indexQueue absent_key parsingQueue True indexing False AS WHERE IN FROM by</Keywords>
+            <Keywords name="Keywords3">d n m MB GB TB PB KB s days</Keywords>
+            <Keywords name="Keywords4"></Keywords>
+            <Keywords name="Keywords5"></Keywords>
+            <Keywords name="Keywords6"></Keywords>
+            <Keywords name="Keywords7"></Keywords>
+            <Keywords name="Keywords8"></Keywords>
+            <Keywords name="Delimiters">00[ 01\ 02] 03 04 05 06` 07 08` 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="0080C0" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="0080C0" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="E94116" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="003D79" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="F32F0C" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="FF0000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="0BA40F" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="0080C0" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="8000FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>
