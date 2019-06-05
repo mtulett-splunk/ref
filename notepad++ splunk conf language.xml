@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="Splunk conf" ext="conf" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="yes" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="2" />
+            <Prefix Keywords1="yes" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00# 01 02# 03 04=</Keywords>
+            <Keywords name="Numbers, prefix1"></Keywords>
+            <Keywords name="Numbers, prefix2"></Keywords>
+            <Keywords name="Numbers, extras1"></Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1"></Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1"></Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open"></Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close"></Keywords>
+            <Keywords name="Folders in code2, open"></Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close"></Keywords>
+            <Keywords name="Folders in comment, open"></Keywords>
+            <Keywords name="Folders in comment, middle"></Keywords>
+            <Keywords name="Folders in comment, close"></Keywords>
+            <Keywords name="Keywords1">disabled repositoryLocation restartSplunkd restartSplunkWeb stateOnClient filterType blacklist. whitelist. continueMatching homePath coldPath thawedPath maxDataSize maxHotBuckets targetUri serverName sslKeysfilePassword description quota slaves stack_id assureUTF8 blockSignSize blockSignatureDatabase bucketRebuildMemoryHint coldToFrozenDir coldToFrozenScript compressRawdata defaultDatabase enableOnlineBucketRepair enableRealtimeSearch frozenTimePeriodInSecs indexThreads maxBloomBackfillBucketAge maxBucketSizeCacheEntries maxConcurrentOptimizes maxHotIdleSecs sync syncMeta maxHotSpanSecs maxMemMB maxMetaEntries maxRunningProcessGroups maxRunningProcessGroupsLowPriority maxTimeUnreplicatedNoAcks maxTimeUnreplicatedWithAcks maxTotalDataSizeMB maxWarmDBCount memPoolMB minRawFileSyncSecs partialServiceMetaPeriod processTrackerServiceInterval quarantineFutureSecs quarantinePastSecs rawChunkSizeBytes repFactor rotatePeriodInSecs serviceMetaPeriod serviceOnlyAsNeeded serviceSubtaskTimingPeriod suppressBannerList throttleCheckPeriod _rcvbuf cipherSuite evt_dc_name evt_dns_name evt_resolve_ad_obj host index password rootCA serverCert checkpointInterval current_only start_from crcSalt interval persistentQueueSize queue source sourcetype move_policy pollPeriod recurse sendEventMaxSize signedaudit _TCP_ROUTING connection_host acceptFrom delayInMills filesPerDelay followLinks fullEvent hashMaxSize route autoLBFrequency blockOnCloning compressed connectionTimeout dropClonedEventsOnQueueFull dropEventsOnQueueFull forceTimebasedAutoLB forwardedindex heartbeatFrequency maxConnectionsPerIndexer maxFailuresPerInterval maxQueueSize readTimeout secsInFailureInterval sendCookedData useACK writeTimeout authType getUserInfoTTL getUsersTTL userLoginTTL rtSrchJobsQuota srchDiskQuota srchJobsQuota srchMaxTime admin_all_objects change_authentication srchTimeWin srchIndexesDefault srchIndexesAllowed srchFilter edit_deployment_client edit_deployment_server edit_dist_peer edit_forwarders edit_httpauths edit_input_defaults edit_monitor edit_roles edit_scripted edit_search_server edit_server edit_splunktcp edit_splunktcp_ssl edit_tcp edit_udp edit_user edit_web_settings edit_win_admon edit_win_eventlogs edit_win_perfmon edit_win_regmon edit_win_wmiconf importRoles = power;user&#x000D; license_edit license_tab list_deployment_client list_forwarders list_httpauths list_pdfserver list_win_localavailablelogs rest_apps_management restart_splunkd run_debug_commands write_pdfserver rtsearch schedule_search change_own_password get_metadata get_typeahead input_file list_inputs output_file request_remote_tok rest_apps_view rest_properties_get rest_properties_set search delete_by_keyword ANNOTATE_PUNCT BREAK_ONLY_BEFORE CHARSET DATETIME_CONFIG HEADER_MODE LEARN_SOURCETYPE LINE_BREAKER_LOOKBEHIND MAX_DAYS_AGO MAX_DAYS_HENCE MAX_DIFF_SECS_AGO MAX_DIFF_SECS_HENCE MAX_EVENTS MAX_TIMESTAMP_LOOKAHEAD MUST_BREAK_AFTER MUST_NOT_BREAK_AFTER MUST_NOT_BREAK_BEFORE NO_BINARY_CHECK SEGMENTATION SHOULD_LINEMERGE TRANSFORMS TRUNCATE maxDist unarchive_cmd EXTRACT- LINE_BREAKER REPORT- TIME_PREFIX pulldown_type TIME_FORMAT LEARN_MODEL PREFIX_SOURCETYPE is_valid invalid_cause CHECK_FOR_HEADER TZ CHECK_METHOD gif htm jpg png txt xml xsl poll.blacklist. lock. poll.interval. state storage maxSize caCertFile caPath certCreateScript enableSplunkdSSL sslKeysfile supportSSLV3Only useClientSSLCompression useSplunkdClientSSLCompression CAN_OPTIMIZE CLEAN_KEYS DEFAULT_VALUE DEST_KEY FORMAT KEEP_EMPTY_VALS LOOKAHEAD MV_ADD REGEX SOURCE_KEY WRITE_META external_cmd fields_list filename max_matches min_matches DELIMS FIELDS httpport js_logger_ js_no_ jschart_test_mode listenOnIPv6 log.access_ log.error_ log.screen login_ max_view_cache_size mgmtHostPort minify_css minify_js module_dir privKeyPath remoteUser request.show_tracebacks response.timeout root_endpoint rss_endpoint serviceFormPostURL startwebserver static_dir static_endpoint template_dir testing_dir testing_endpoint tools.decode. tools.encode. tools.sessions. trap_module_exceptions ui_inactivity_timeout updateCheckerBaseURL use_future_expires userRegistrationURL SSOMode caCertPath docsCheckerBaseURL enableSplunkWebSSL flash_revision_version flash_minor_version flash_major_version engine.autoreload_on enable_gzip enabled_decomposers enable_proxy_write enable_insecure_login enable_autocomplete_login defaultGroup autoLB sslCertPath sslRootCAPath sslVerifyServerCert server counters instances object wql hive proc type pass4SymmKey mode master_uri replication_factor search_factor active_group site available_sites multisite configuredPeers cluster_label forwarder_site_failover mgmt_uri id shcluster_label conf_deploy_fetch_url KV_MODE FIELDALIAS EVAL LOOKUP REPORT MATCH_LIMIT DEPTH_LIMIT CLONE_SOURCETYPE priority timestampformat SEDCMD maxEventSize is_visible label author version EVENT_BREAKER EVENT_BREAKER_ENABLE docs_section_override is_configured build is_manageable check_for_updates tstatsHomePath category FIELD_DELIMITER FIELD_NAMES FIELD_QUOTE TIMESTAMP_FIELDS</Keywords>
+            <Keywords name="Keywords2">true false 0 1 disable enable blacklist whitelist rejectAlways auto main disabled enabled ALL !aNULL !eNULL !LOW !EXP RC4+RSA +HIGH +MEDIUM default oldest replicationQueue has_key typingQueue indexQueue absent_key parsingQueue True indexing False AS WHERE IN FROM by</Keywords>
+            <Keywords name="Keywords3">d n m MB GB TB PB KB s days</Keywords>
+            <Keywords name="Keywords4"></Keywords>
+            <Keywords name="Keywords5"></Keywords>
+            <Keywords name="Keywords6"></Keywords>
+            <Keywords name="Keywords7"></Keywords>
+            <Keywords name="Keywords8"></Keywords>
+            <Keywords name="Delimiters">00[ 01\ 02] 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="0080C0" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="0080C0" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="E94116" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="003D79" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="F32F0C" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="FF0000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="0BA40F" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="0080C0" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>
