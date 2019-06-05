@@ -1,0 +1,20 @@
+; rand-r75w25-4K.job for fiotest
+; run with: fio rand-r75w25-4K.job
+
+[global]
+name=rand-r75w25-4K
+filename=rand-r75w25-4K
+rw=randrw
+rwmixread=75
+rwmixwrite=25
+bs=4K
+direct=1
+gtod_reduce=1
+numjobs=4
+time_based=1
+runtime=900
+
+[file1]
+size=5G
+ioengine=libaio
+iodepth=8
