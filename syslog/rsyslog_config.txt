@@ -1,0 +1,34 @@
+######################
+# Set file permissions
+
+$umask 0000
+$FileOwner root
+$FileGroup splunk
+$DirOwner root
+$DirGroup splunk
+$FileCreateMode 0640
+$DirCreateMode 0750
+
+#####################
+# Provides TCP and UDP syslog reception
+
+$ModLoad imudp
+$ModLoad imtcp
+
+######################
+# Log every host in its own directory for Splunk
+
+$template RemoteHost,"/var/log/remote/%FROMHOST%/messages"
+$InputTCPServerBindRuleset RemoteHost
+$InputUDPServerBindRuleset RemoteHost
+
+#####################
+# Start TCP/UDP 514
+
+# Start UDP Default 514
+$UDPServerRun 514
+
+# Start TCP Default 514
+$InputTCPServerRun 514
+
+& ~
