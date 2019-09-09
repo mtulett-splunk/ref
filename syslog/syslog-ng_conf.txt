@@ -1,0 +1,46 @@
+# Place in /etc/syslog-ng/conf.d/
+
+##### OPTIONS #####
+
+	# Enable DNS resolution for hostnames
+	options {
+		use_dns (yes);
+		keep_hostname (yes);
+	};
+
+##### TIMESTAMP TEMPLATE #####
+
+	# Format timestamp to ISO standard
+	# (ONLY configure if required, will break many TAs if used with Splunk)
+	
+	#template template_date_format {
+	#	template("${ISODATE} ${HOST} ${MSGHDR}${MSG}\n");
+	#	template_escape (no);
+	#};
+	
+##### SOURCES #####
+
+	# Listen on UDP/TCP 514 for syslog traffic
+	source s_network {
+		tcp(ip(0.0.0.0) port(514));
+		udp(ip(0.0.0.0) port(514));
+	};
+
+##### DESTINATIONS #####
+	
+	# Store logs in subfolders based on the host name
+	destination d_host_sub_folders { 
+		file("/var/log/remote/$HOST/messages"
+		# template(template_date_format)
+		owner(root) group(root) perm(0644) dir_perm(0755) create_dirs(yes)); 
+	};
+	
+##### FILTERS #####
+
+# Example filter, uncomment to use:
+#       filter remove_connections {not message("^.*?ASA-6-302013.*?$");};
+
+##### LOG OUTPUTS - LOG SOURCE (--> FILTER) --> DESTINATION #####
+	
+	# Take syslog sources and output them to subdirectories based on host name
+	log { source(s_network); destination(d_host_sub_folders); };
