@@ -18,6 +18,12 @@
 	#	template_escape (no);
 	#};
 	
+	# Useful for bluecoat, as an example
+	template no_timestamp {
+	template($MSGHDR$MSG\n);
+		template_escape(no);
+	};
+	
 ##### SOURCES #####
 
 	# Listen on UDP/TCP 514 for syslog traffic
