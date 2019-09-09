@@ -1,0 +1,49 @@
+### For systemd
+
+/var/log/remote/*/messages
+{
+        rotate 7
+        daily
+        missingok
+        notifempty
+        delaycompress
+        compress
+        postrotate
+                /bin/systemctl reload syslog-ng >/dev/null
+        endscript
+}
+
+### For init.d
+
+/data/syslog/*/*.log
+{
+        rotate 7
+        daily
+        missingok
+        notifempty
+        delaycompress
+        compress
+        postrotate
+                /etc/init.d/syslog-ng reload >/dev/null
+        endscript
+}
+
+
+
+### Possible alternative if the above fails
+
+/app/remotehostlog/syslog/*.log
+{
+	daily
+	compress
+	delaycompress
+	rotate 7
+	notifempty
+	maxage 7
+	nocreate
+	missingok
+	sharedscripts
+	postrotate
+		/bin/kill -HUP `cat /var/run/syslog-ng.pid 2> /dev/null` 2> /dev/null || true
+	endscript
+}
